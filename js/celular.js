@@ -2,13 +2,13 @@ class celular{
     constructor(){
         this.modelo;
         this.marca;
-        this.bateria=0;
+        this.bateria = 0;
     }
     
     carregarBateria(quantidadedecarga){
         this.bateria += quantidadedecarga;
-        if(this.bateria+quantidadedecarga>=100){
-            this.bateria=100;
+        if(this.bateria + quantidadedecarga >= 100){
+            this.bateria = 100;
         }
     }
 
@@ -52,8 +52,8 @@ class celular{
         document.write(this.retornarInfo());
     }
 
-    exibirNaDiv(div){
-        div.innerHtml = this.retornarInfo();
+    exibirNaDiv(vDiv){
+        vDiv.innerHTML = this.retornarInfo();
     }
 
 
