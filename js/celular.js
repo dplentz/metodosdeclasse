@@ -42,7 +42,7 @@ class celular{
 
     retornarInfo(){
         let retorno;
-        retorno = "Informações";
+        retorno =  "<br/>----Informações:----";
         retorno += "<br/> Marca = " + this.marca + "<br/> Modelo = " + this.modelo;
         retorno += "<br/> Bateria = " + this.bateria;
         return retorno;

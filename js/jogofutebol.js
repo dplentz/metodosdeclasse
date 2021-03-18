@@ -19,7 +19,7 @@ class jogofutebol{
 
     retornarInfo(){
         let placa;
-        placa = "****Placar****"
+        placa = "<br/>****Placar****"
         placa += "<br/> "+this.time1+" "+this.golsTime1+" x " +this.golsTime2+" " +this.time2;
         return placa;    
     }
