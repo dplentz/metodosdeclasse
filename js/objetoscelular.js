@@ -1,6 +1,12 @@
-    function criarObjeto()
+function criarObjeto()
 {
-    var objCelular = new celular()
+    var objCelular = new celular();
     objCelular.modelo = txtModelo.value;
-    nokia01.marca = txtMarca.value;
+    objCelular.marca = txtMarca.value;
+    alert("celular criado com sucesso");
+}
+
+function exibir()
+{
+    objCelular.exibirNaDiv(divUm);
 }
