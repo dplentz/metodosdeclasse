@@ -7,9 +7,28 @@
     <title>Document</title>
 </head>
 <body>
+    <form action="">
+        <li>
+            <label for="txtMarca">Marca</label>
+            <input type="text" id="txtMarca">
+            <label for="txtModelo">Modelo</label>
+            <input type="text" id="txtModelo">
+            <button type="button" onclick="criarObj()">Adicionar celular</button>
+            <button type="button" onclick="exibir()">Exibir</button>
+        </li>
+        <li>
+            <input type="text" id="app">
+            <button type="button" onclick="usarApp(aplicativo)">Usar App</button>
+        </li>
+        <li>
+            <input type="text" name="" id="carga">
+            <button type="button" onclick="carregarBateria()">Carregar Bateria</button>
+        </li>
+    </form>
     <div id="divUm"><br/>Um</div>
     <div id="divDois"><br/>Dois</div>
     <script src="js/celular.js"></script>
     <script src="js/objetoscelular.js"></script>
+    
 </body>
 </html>

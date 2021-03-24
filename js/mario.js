@@ -11,7 +11,6 @@ class mario
 
     retornarInfo(){
         let retorno;
-        
             retorno = "<br/>----- Info ----- <br/>"
             retorno += " Personagem: " + this.personagem;
             retorno += "<br/> Vivo? " + this.vivo;
