@@ -7,7 +7,7 @@ class celular{
     
     carregarBateria(quantidadedecarga){
         this.bateria += quantidadedecarga;
-        if(this.bateria + quantidadedecarga >= 100){
+        if(this.bateria >= 100){
             this.bateria = 100;
         }
     }
