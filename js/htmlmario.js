@@ -2,7 +2,15 @@ var objPersonagem = new mario();
 function criarObj() 
 {
     objPersonagem = personagem.value;
-    alert("obj criado");
+
+    if(objPersonagem!=null){
+        objPersonagem.exibirNaDiv();
+    alert("aa");
+    } 
+    else
+    {
+        alert("merda");
+    }
 }
 function exibir()
 {   if(objPersonagem!=null){
