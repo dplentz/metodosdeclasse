@@ -6,8 +6,10 @@ class celular{
     }
     
     carregarBateria(quantidadedecarga){
-        this.bateria += quantidadedecarga;
-        if(this.bateria >= 100){
+        if(this.bateria+quantidadedecarga <=100)
+        {
+        this.bateria = this.bateria + quantidadedecarga;
+        } else {
             this.bateria = 100;
         }
     }
@@ -31,9 +33,13 @@ class celular{
                 return false;
                 break;
         }
-        if(this.bateria-consumo>=1){
+        if(this.bateria-consumo<=1){
+            return false;
+        } else {
             this.bateria -= consumo;
+            return true;
         }
+
     }
 
     retornarInfo(){

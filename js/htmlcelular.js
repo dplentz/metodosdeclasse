@@ -17,6 +17,7 @@ function carregarBat()
 {
     let valor;
     valor = carga.value;
+    valor = parseInt(valor);
     objCelular.carregarBateria(valor);
     objCelular.exibirNaDiv(divUm);
 }

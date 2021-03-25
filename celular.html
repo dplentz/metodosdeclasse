@@ -7,31 +7,39 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <h1 style="text-align: center;">Celular</h1>
+    <form action="" style="text-align: center;">
         <li>
             <label for="txtMarca">Marca</label>
             <input type="text" id="txtMarca">
+        </li>
+        <br>
+        <li>
+       
             <label for="txtModelo">Modelo</label>
-            <input type="text" id="txtModelo">
+            <input type="text" id="txtModelo"> <br/> <br>
             <button type="button" onclick="criarObjeto()">Adicionar celular</button>
             <button type="button" onclick="exibir()">Exibir</button>
         </li>
-        <li>
+        <br>
+        <li> 
             <select name="" id="app">
-                <option>selecione</option>
+                <option hidden>selecione</option>
                 <option>whatsapp</option>
                 <option>colheita feliz</option>
                 <option>youtube</option>
                 <option>outros</option>
             </select>
-            <button type="button" onclick="usar()">Usar App</button>
+            <button type="button" onclick="usar()">Usar Aplicativo</button>
         </li>
+        <br>
         <li>
-            <input type="number" name="" id="carga">
+            <input type="number" max="100" name="" id="carga">
             <button type="button" onclick="carregarBat()">Carregar Bateria</button>
         </li>
     </form>
-    <div id="divUm"><br/>Um</div>
+    <br>
+    <div id="divUm" style="text-align: center;"><br/></div>
     <script src="js/celular.js"></script>
     <script src="js/htmlcelular.js"></script>
     

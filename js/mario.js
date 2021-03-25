@@ -3,7 +3,7 @@ class mario
     
     constructor()
     {
-        this.personagem;
+        this.personagem = "escolha";
         this.vivo = true;
         this.tamanho = "pequeno";
         this.poder = "nenhum";

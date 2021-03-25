@@ -7,12 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <h1 style="text-align: center;">Jogo do Mário</h1>
+    <form style="text-align: center;">
 
-        <label for="personagem">Personagem</label>
-        <select name="personagem" id="personagem">
-            <option value="mario">Mario</option>
-            <option value="luighi">Luígi</option>
+        <label for="nome">Personagem</label>
+        <select name="" id="nome">
+            <option value="Mário">Mário</option>
+            <option value="Luígi">Luígi</option>
           </select>
 
         <button type="button" onclick="criarObj()">Criar Objeto</button>
@@ -22,24 +23,21 @@
           <br/><br/>
 
         <label for="txtPoderes">Poderes</label>
-        <select name="poderes" id="txtPoderes">
-            <option value="npoderes">Sem poderes</option>
-            <option value="flor">Flor</option>
-            <option value="pena">Pena</option>
-            <option value="cogumelo">Cogumelo</option>
+        <select name="" id="txtPoderes">
+            <option value="nenhum">Sem poderes</option>
+            <option value="cogumelo">cogumelo</option>
+            <option value="pena">pena</option>
+            <option value="flor">flor</option>
           </select>
           
-
           <button type="button" onclick="poder()">Pegar Objeto</button>
 
           <br><br>
 
-          <button type="button" onclick="serAtacado()">Atacar</button>
+          <button type="button" onclick="luta()">Atacar</button>
          
     </form>  <br>
-    <div id="divUm"></div>
-    
-    
+    <div id="divUm" style="text-align: center;"></div>    
     <script src="js/mario.js"></script>
     <script src="js/htmlmario.js"></script>
 </body>

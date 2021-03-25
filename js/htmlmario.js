@@ -1,34 +1,29 @@
-var objPersonagem = new mario();
+var objPersonagem = new mario(); 
 function criarObj() 
 {
-    objPersonagem = personagem.value;
+    objPersonagem.personagem = nome.value;
+    
+    }
 
+function exibir()
+{
     if(objPersonagem!=null){
         objPersonagem.exibirNaDiv();
-    alert("a");
     } 
     else
     {
-        alert("merda");
-    }
-}
-function exibir()
-{   if(objPersonagem!=null){
-        objPersonagem.exibirNaDiv();
-    alert("aa");
-    } 
-    else
-    {
-        alert("merda");
+        alert("Não possui objeto");
     }
 }
 function poder()
 {
     let obj;
     obj = txtPoderes.value;
-    pegarItem(obj);
+    objPersonagem.pegarItem(obj);
+    objPersonagem.exibirNaDiv();
 }
 function luta()
 {
-
+    objPersonagem.serAtacado();
+    objPersonagem.exibirNaDiv();
 }
