@@ -16,8 +16,11 @@ class mario
             retorno += "<br/> Vivo? " + this.vivo;
             retorno += "<br/> Tamanho: " + this.tamanho;
             retorno += "<br/> Poder: " + this.poder;
-            
-            document.write(retorno);
+            return retorno;
+    }
+
+    exibirNaDiv(){
+        divUm.innerHTML = this.retornarInfo();
     }
 
     pegarItem(item){

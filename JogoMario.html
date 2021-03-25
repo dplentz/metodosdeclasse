@@ -8,25 +8,38 @@
 </head>
 <body>
     <form action="">
+
         <label for="personagem">Personagem</label>
         <select name="personagem" id="personagem">
             <option value="mario">Mario</option>
             <option value="luighi">Luígi</option>
-          </select><br><br>
-        <label for="poderes">Poderes</label>
-        <select name="poderes" id="poderes">
+          </select>
+
+        <button type="button" onclick="criarObj()">Criar Objeto</button>
+
+        <button type="button" onclick="exibir()">Exibir</button>
+
+          <br/><br/>
+
+        <label for="txtPoderes">Poderes</label>
+        <select name="poderes" id="txtPoderes">
             <option value="npoderes">Sem poderes</option>
             <option value="flor">Flor</option>
             <option value="pena">Pena</option>
             <option value="cogumelo">Cogumelo</option>
-          </select><br><br>
-          <label for="ataque">Ataque</label>
-          <input type="checkbox" id="ataque" name="ataque"><br><br>
-          <input type="submit" id="submit" name="submit"><br><br>
+          </select>
+
+          <button type="button" onclick="poder()">Pegar Objeto</button>
+
+          <br><br>
+
+          <button type="button" onclick="luta()">Atacar</button>
+         
     </form>  <br>
+    <div id="divUm"></div>
     
     
     <script src="js/mario.js"></script>
-    <script src="js/objetosmario.js"></script>
+    <script src="js/htmlmario.js"></script>
 </body>
 </html>

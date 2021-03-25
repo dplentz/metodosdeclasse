@@ -3,8 +3,8 @@ class jogofutebol{
     constructor(){
         this.time1;
         this.time2;
-        this.golsTime1;
-        this.golsTime2;
+        this.golsTime1 = 0;
+        this.golsTime2 = 0 ;
     }
     
     marcarGol(nomedotime){
@@ -25,6 +25,6 @@ class jogofutebol{
     }
 
     mostrarPlacar(){
-        document.write(this.retornarInfo());
+        divUm.innerHTML = this.retornarInfo();
     }
 }

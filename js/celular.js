@@ -31,13 +31,9 @@ class celular{
                 return false;
                 break;
         }
-        if(this.bateria-consumo<=1){
-            return false;
-        } else {
+        if(this.bateria-consumo>=1){
             this.bateria -= consumo;
-            return true;
         }
-
     }
 
     retornarInfo(){

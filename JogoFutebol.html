@@ -7,23 +7,23 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <label for="time1"></label>
-        <input type="text" id="time1" name="time1"><br>
+    <form>
+        <label for="time1">Time 1</label>
+        <input type="text" id="txtTimeUm" name="time1"><br/>
         <p>CONTRA</p>
-        <label for="time2"></label>
-        <input type="text" id="time2" name="time2"><br><br>
-        <input type="submit" value="Submit">
-    </form>  <br>
-
-    <p>Marcar ponto para:</p>
-    <button></button>
-    <button></button>
-
-    <p>PLACAR</p>
+        <label for="time2">Time 2</label>
+        <input type="text" id="txtTimeDois" name="time2"><br/><br/>
+        <button type="button" onclick="criarObj()">Criar Objeto</button>
+        <button type="button" onclick="exibir()">Exibir</button>
+        <p>Marcar ponto para:</p>
+        <label for="txtTime"></label>
+        <input type="text" id="txtTime">
+        <button type="button" onclick="pontuar()">Marcar ponto</button>
+    </form>
+        <div id="divUm"></div>
     
 
     <script src="js/jogofutebol.js"></script>
-    <script src="js/objetosjogofutebol.js"></script>
+    <script src="js/htmljogofutebol.js"></script>
 </body>
 </html>
