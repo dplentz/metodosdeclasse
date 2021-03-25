@@ -5,7 +5,7 @@ function criarObj()
 
     if(objPersonagem!=null){
         objPersonagem.exibirNaDiv();
-    alert("aa");
+    alert("a");
     } 
     else
     {

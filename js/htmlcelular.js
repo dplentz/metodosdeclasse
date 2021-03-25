@@ -10,10 +10,7 @@ function exibir()
 {     
     if (objCelular != null) {
         objCelular.exibirNaDiv(divUm);
-        alert("Deu certo");
-    } else{
-        alert("Deu errado");
-    }   
+    }
 }
 
 function carregarBat()
