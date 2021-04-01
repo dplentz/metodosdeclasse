@@ -3,7 +3,7 @@ class mario
     
     constructor()
     {
-        this.personagem = "escolha";
+        this.personagem = "Escolher";
         this.vivo = true;
         this.tamanho = "pequeno";
         this.poder = "nenhum";
@@ -27,6 +27,7 @@ class mario
         switch (item) {
             case "cogumelo":
                 this.tamanho = "grande";
+                this.poder = "nenhum"
                 break;
             case "pena":
                 this.tamanho = "grande";
@@ -56,5 +57,6 @@ class mario
             }
             return vivo;
     }
+    
 
 }

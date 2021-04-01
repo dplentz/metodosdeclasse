@@ -2,28 +2,42 @@ var objPersonagem = new mario();
 function criarObj() 
 {
     objPersonagem.personagem = nome.value;
-    
+    if (objPersonagem.personagem == "Selecione") {
+        objPersonagem.personagem = "Escolher";
     }
+}
 
 function exibir()
 {
-    if(objPersonagem!=null){
+    if(objPersonagem!=null && objPersonagem.personagem!="Escolher"){
         objPersonagem.exibirNaDiv();
     } 
     else
     {
-        alert("Não possui objeto");
+        alert("Personagem não cadastrado");
     }
 }
 function poder()
 {
     let obj;
     obj = txtPoderes.value;
-    objPersonagem.pegarItem(obj);
-    objPersonagem.exibirNaDiv();
+    if(objPersonagem.vivo == true && objPersonagem.personagem!="Escolher")
+    {
+        objPersonagem.pegarItem(obj);
+        objPersonagem.exibirNaDiv();
+    }
 }
 function luta()
-{
-    objPersonagem.serAtacado();
-    objPersonagem.exibirNaDiv();
+{   if(objPersonagem.personagem!="Escolher")
+    {
+        objPersonagem.serAtacado();
+        objPersonagem.exibirNaDiv();
+    }
+}
+function reiniciar() {
+    objPersonagem.personagem = "Escolher";
+    objPersonagem.vivo = true;
+    objPersonagem.tamanho = "pequeno";
+    objPersonagem.poder = "nenhum";
+    divUm.innerHTML = "Inserir personagem";
 }
